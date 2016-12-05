@@ -1,10 +1,16 @@
-(function(){
-	for(var index = 1; index <= 10; index+=2){
-		console.log(index--);
-		greet();
-	}
-})()
 
-function greet(){
-	console.log("hello");
+
+var Componentes = {
+	valor:0,
+	incrementar:function(){
+      Componentes.valor++;
+     console.log(Componentes.valor);
+	},
+	reducir:function(){
+		if(Componentes.valor==0)
+			return;
+   Componentes.valor--;
+   console.log(Componentes.valor);
+	}
 }
+
